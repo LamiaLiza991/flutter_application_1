@@ -17,36 +17,38 @@ class LabClass05 extends StatelessWidget {
           backgroundColor: Colors.blue[400],
           centerTitle: true,
         ),
-        body: Center(
-          // Centers the entire content vertically and horizontally
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment
-                .start, // Aligns the "4" and icons to the left
+        body: Container(
+          height: double.infinity,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center, 
             children: [
-              Text(
-                "4",
-                style: TextStyle(
-                  fontSize: 30,
-                ),
+              Icon(
+                Icons.ac_unit,
+                size: 60,
+                color: const Color.fromARGB(255, 0, 217, 255),
               ),
-              SizedBox(height: 10), // Adds space between the "4" and the icons
-              Row(
-                children: [
-                  Icon(Icons.star, size: 50),
-                  SizedBox(width: 20),
-                  Icon(Icons.star, size: 50),
-                  SizedBox(width: 20),
-                  Icon(Icons.star, size: 50),
-                  SizedBox(width: 20),
-                  Icon(Icons.star, size: 50),
-                  SizedBox(width: 20),
-                  Icon(Icons.star_outline, size: 50),
-                ],
+              Icon(
+                Icons.ac_unit,
+                size: 60,
+                color: const Color.fromARGB(255, 240, 86, 9),
+              ),
+              Icon(
+                Icons.ac_unit,
+                size: 60,
+                color: const Color.fromARGB(255, 6, 48, 237),
+              ),
+              Icon(
+                Icons.ac_unit,
+                size: 60,
+                color: const Color.fromARGB(255, 228, 70, 243),
               ),
             ],
           ),
+        )
+          
         ),
-      ),
+      
     );
   }
 }
