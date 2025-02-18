@@ -7,8 +7,7 @@ void main() {
 class LabClass05 extends StatelessWidget {
   const LabClass05({super.key});
 
-
-   @override
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Basic Flutter UI-02",
@@ -18,16 +17,32 @@ class LabClass05 extends StatelessWidget {
           backgroundColor: Colors.blue[400],
           centerTitle: true,
         ),
-         body: Center( // Centers the Row in the middle of the screen
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center, // Centers icons horizontally
-            crossAxisAlignment: CrossAxisAlignment.center, // Centers icons vertically
+        body: Center(
+          // Centers the entire content vertically and horizontally
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment
+                .start, // Aligns the "4" and icons to the left
             children: [
-              Icon(Icons.star, size: 50),
-              Icon(Icons.star, size: 50),
-              Icon(Icons.star, size: 50),
-              Icon(Icons.star, size: 50),
-              Icon(Icons.star_outline, size: 50),
+              Text(
+                "4",
+                style: TextStyle(
+                  fontSize: 30,
+                ),
+              ),
+              SizedBox(height: 10), // Adds space between the "4" and the icons
+              Row(
+                children: [
+                  Icon(Icons.star, size: 50),
+                  SizedBox(width: 20),
+                  Icon(Icons.star, size: 50),
+                  SizedBox(width: 20),
+                  Icon(Icons.star, size: 50),
+                  SizedBox(width: 20),
+                  Icon(Icons.star, size: 50),
+                  SizedBox(width: 20),
+                  Icon(Icons.star_outline, size: 50),
+                ],
+              ),
             ],
           ),
         ),
