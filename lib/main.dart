@@ -17,23 +17,53 @@ class LabClass05 extends StatelessWidget {
           backgroundColor: Colors.blue[400],
           centerTitle: true,
         ),
-         body: SingleChildScrollView(
-          scrollDirection: Axis.horizontal, 
-          child: Container(
-            height: 600,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
-              crossAxisAlignment: CrossAxisAlignment.center, 
-              children: List.generate(
-                100,
-                (index) => Icon(
-                  Icons.airplanemode_active, // Using standard Flutter icon
-                  size: index.toDouble(), 
-                  color: const Color.fromARGB(255, 21, 0, 255),
-                ),
-              ),
+         body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Icon(
+              Icons.access_alarm, // Using an official Flutter icon
+              size: 50,
+              color: const Color.fromARGB(255, 255, 0, 0),
             ),
-          ),
+            Icon(
+              Icons.access_alarm, // Using an official Flutter icon
+              size: 50,
+              color: const Color.fromARGB(255, 255, 0, 0),
+            ),
+            Row(
+              children: [
+                Icon(
+                  Icons.add_box, // Using an official Flutter icon
+                  size: 50,
+                  color: const Color.fromARGB(255, 255, 238, 0),
+                ),
+                Icon(
+                  Icons.add_box, // Using an official Flutter icon
+                  size: 50,
+                  color: const Color.fromARGB(255, 255, 238, 0),
+                ),
+                Icon(
+                  Icons.add_box, // Using an official Flutter icon
+                  size: 50,
+                  color: const Color.fromARGB(255, 255, 238, 0),
+                ),
+                Column(
+                  children: [
+                    Icon(
+                      Icons.add_box, // Using an official Flutter icon
+                      size: 50,
+                      color: const Color.fromARGB(255, 4, 0, 255),
+                    ),
+                    Icon(
+                      Icons.add_box, // Using an official Flutter icon
+                      size: 50,
+                      color: const Color.fromARGB(255, 0, 110, 255),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
