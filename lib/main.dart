@@ -18,29 +18,18 @@ class LabClass05 extends StatelessWidget {
           backgroundColor: Colors.blue[400],
           centerTitle: true,
         ),
-         body: Row(
-          children: [
-            Icon(
-             Icons.star,
-             size: 50, 
-            ),
-            Icon(
-             Icons.star,
-             size: 50, 
-            ),
-            Icon(
-             Icons.star,
-             size: 50, 
-            ),
-            Icon(
-             Icons.star,
-             size: 50, 
-            ),
-            Icon(
-             Icons.star_outline,
-             size: 50, 
-            ),
-          ],
+         body: Center( // Centers the Row in the middle of the screen
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center, // Centers icons horizontally
+            crossAxisAlignment: CrossAxisAlignment.center, // Centers icons vertically
+            children: [
+              Icon(Icons.star, size: 50),
+              Icon(Icons.star, size: 50),
+              Icon(Icons.star, size: 50),
+              Icon(Icons.star, size: 50),
+              Icon(Icons.star_outline, size: 50),
+            ],
+          ),
         ),
       ),
     );
