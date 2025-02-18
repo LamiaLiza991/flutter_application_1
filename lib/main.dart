@@ -18,19 +18,35 @@ class LabClass05 extends StatelessWidget {
           backgroundColor: Colors.blue[400],
           centerTitle: true,
         ),
-        body: Center( // Wrap the Text widget with Center to align it
-          child: Text(
-            "Basic Flutter UI - Part 02",
-            style: TextStyle(
-              fontSize: 30,
-               ),
-          ),
+        body: Row(
+          children: [
+            Text(
+              "Hi, ",
+              style: TextStyle(
+                color: Colors.red,
+                fontSize: 30,
+              ),
+            ),
+            Text(
+              "This is ",
+              style: TextStyle(
+                color: Colors.blue,
+                fontSize: 30,
+              ),
+            ),
+            Text(
+              "Flutter, ",
+              style: TextStyle(
+                color: Colors.green,
+                fontSize: 30,
+              ),
+            ),
+          ],
         ),
       ),
     );
   }
 }
-
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
   final String title;
